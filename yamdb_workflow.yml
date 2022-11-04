@@ -44,8 +44,7 @@ jobs:
         with:
           context: api_yamdb
           push: true
-          tags: bujhvh/api_yamdb-web:latest
-          file: api_yamdb/Dockerfile
+          tags: bujhvh/api_yamdb-web:latest 
   
   deploy:
     runs-on: ubuntu-latest
