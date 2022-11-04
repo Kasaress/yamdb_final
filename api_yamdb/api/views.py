@@ -1,3 +1,12 @@
+from api.filters import TitlesFilter
+from api.permissions import (IsAdminOrModeratorOrAuthor, IsAdminOrReadOnly,
+                             IsAdminOrSuperUser)
+from api.serializers import (AuthorSerializer, CategorySerializer,
+                             CommentSerializer, GenreSerializer,
+                             ReviewSerializer, SignUpSerializer,
+                             TitleReadSerializer, TitleWriteSerializer,
+                             TokenSerializer, UserSerializer)
+from api.utils import generate_confirmation_code, send_confirmation_code
 from django.conf import settings
 from django.db import IntegrityError
 from django.db.models import Avg
@@ -11,16 +20,6 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.models import Category, Genre, Review, Title
 from users.models import CustomUser as User
-
-from api.filters import TitlesFilter
-from api.permissions import (IsAdminOrModeratorOrAuthor, IsAdminOrReadOnly,
-                             IsAdminOrSuperUser)
-from api.serializers import (AuthorSerializer, CategorySerializer,
-                             CommentSerializer, GenreSerializer,
-                             ReviewSerializer, SignUpSerializer,
-                             TitleReadSerializer, TitleWriteSerializer,
-                             TokenSerializer, UserSerializer)
-from api.utils import generate_confirmation_code, send_confirmation_code
 
 
 class RegisterView(APIView):
