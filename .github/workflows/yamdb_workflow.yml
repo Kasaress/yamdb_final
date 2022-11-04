@@ -23,7 +23,6 @@ jobs:
     - name: Test with flake8 and pytests
       run: |
         python -m flake8 
-        cd yamdb_final/
         pytest
 
   build_and_push_to_docker_hub:
