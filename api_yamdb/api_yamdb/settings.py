@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs')
 
-if socket.gethostname() == ' http://130.193.48.192':
+if socket.gethostname() != 'localhost':
     DEBUG = False
 else:
     DEBUG = True
