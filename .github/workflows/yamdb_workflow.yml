@@ -67,10 +67,8 @@ jobs:
           echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
           echo DB_HOST=${{ secrets.DB_HOST }} >> .env
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-          sudo docker-compose up -d
           sudo docker pull bujhvh/api_yamdb-web:latest 
-          sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 bujhvh/api_yamdb-web:latest  
+          sudo docker-compose up -d
   
   send_message:
     runs-on: ubuntu-latest
