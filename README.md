@@ -1,8 +1,9 @@
 
 # yamdb_final
+![workflow](https://github.com/kasaress/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push) .\
 
-![Logo](https://cdn-irec.r-99.com/sites/default/files/product-images/399872/EOXOqQkXnjTMTRnIpMUSvQ.jpg)
-![workflow](https://github.com/kasaress/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
+![Logo](https://cdn-irec.r-99.com/sites/default/files/product-images/399872/EOXOqQkXnjTMTRnIpMUSvQ.jpg) .\
+
 
 Документация проекта:
 http://130.193.48.192/redoc/
