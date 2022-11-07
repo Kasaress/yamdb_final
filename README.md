@@ -5,7 +5,7 @@
 ![workflow](https://github.com/kasaress/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
 Документация проекта:
-![документация](http://130.193.48.192/redoc/)
+http://130.193.48.192/redoc/
 
 Проект Yamdb собирает отзывы (Review) пользователей на произведения (Titles).\
 Работы разделены на категории: «Книги», «Фильмы», «Музыка».\
