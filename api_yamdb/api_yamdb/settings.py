@@ -15,9 +15,6 @@ if socket.gethostname() != 'localhost':
 else:
     DEBUG = True
 
-print(DEBUG)
-print(socket.gethostname())
-
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default='*')]
 
 INSTALLED_APPS = [
