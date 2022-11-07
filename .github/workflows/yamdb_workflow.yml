@@ -10,6 +10,7 @@ jobs:
     strategy:
         matrix:
           python-version: ["3.8"]
+     # разобралась как тестить версии, но другие питоны падают из-за несовместимости зависимостей
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
@@ -52,6 +53,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
+    if: github.ref == 'refs/heads/master'
     steps:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
